@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Vasanthaprakash E - Data Analyst, MIS Executive, Automation Enthusiast">
+    <meta name="author" content="Vasanthaprakash E">
+    <meta name="theme-color" content="#3b82f6">
+    <title>Vasanthaprakash E | Data Analyst & MIS Executive</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Compiled Tailwind CSS -->
+    <link href="style.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 dark:bg-gray-900 transition-colors duration-300 font-['Inter']">
+    
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 w-full bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm shadow-md z-50 transition-all duration-300">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="#home" class="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                    V<span class="text-gray-900 dark:text-white">Prakash</span>
+                </a>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="nav-link text-gray-700 dark:text-gray-300 hover:text-blue-600 transition">Home</a>
+                    <a href="#about" class="nav-link text-gray-700 dark:text-gray-300 hover:text-blue-600 transition">About</a>
+                    <a href="#experience" class="nav-link text-gray-700 dark:text-gray-300 hover:text-blue-600 transition">Experience</a>
+                    <a href="#projects" class="nav-link text-gray-700 dark:text-gray-300 hover:text-blue-600 transition">Projects</a>
+                    <a href="#skills" class="nav-link text-gray-700 dark:text-gray-300 hover:text-blue-600 transition">Skills</a>
+                    <a href="blog.html" class="nav-link text-gray-700 dark:text-gray-300 hover:text-blue-600 transition">Blog</a>
+                    <a href="#feedback" class="nav-link text-gray-700 dark:text-gray-300 hover:text-blue-600 transition">Feedback</a>
+                </div>
+                
+                <!-- Dark Mode Toggle -->
+                <button id="darkModeToggle" class="p-2 rounded-lg bg-gray-200 dark:bg-gray-700 transition hover:scale-105" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon text-gray-700 dark:hidden"></i>
+                    <i class="fas fa-sun hidden dark:inline-block text-yellow-400"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section id="home" class="pt-32 pb-20 px-6 min-h-screen flex items-center">
+        <div class="container mx-auto">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <!-- Left Side - Text Content -->
+                <div data-aos="fade-right" data-aos-duration="1000">
+                    <div class="mb-6">
+                        <span class="px-4 py-2 bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 rounded-full text-sm font-semibold">
+                            👋 Welcome to my portfolio
+                        </span>
+                    </div>
+                    <h1 class="text-5xl md:text-6xl font-bold text-gray-900 dark:text-white mb-4">
+                        Vasanthaprakash <span class="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">E</span>
+                    </h1>
+                    <p class="text-2xl text-gray-600 dark:text-gray-400 mb-4">
+                        Data Analyst | MIS Executive | Automation Enthusiast
+                    </p>
+                    <p class="text-lg text-gray-500 dark:text-gray-400 mb-8 leading-relaxed">
+                        Transforming IoT and operational data into actionable intelligence. Specializing in ETL pipelines, 
+                        Power BI dashboards, and AI-augmented workflows for large-scale urban operations.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#projects" class="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition shadow-lg">
+                            Explore My Work
+                        </a>
+                        <a href="#feedback" class="border-2 border-blue-600 text-blue-600 dark:text-blue-400 px-8 py-3 rounded-lg hover:bg-blue-600 hover:text-white transition">
+                            Give Feedback
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Right Side - Clean Profile Photo (No Frames, No Rings, No Badges) -->
+                <div data-aos="fade-left" data-aos-duration="1000" class="flex justify-center">
+                    <img src="Profile.jpeg" 
+                         alt="Vasanthaprakash E - Data Analyst & MIS Executive" 
+                         class="w-72 h-72 md:w-80 md:h-80 rounded-full object-cover object-center shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white dark:bg-gray-800">
+        <div class="container mx-auto px-6">
+            <h2 data-aos="fade-up" class="text-4xl font-bold text-center text-gray-900 dark:text-white mb-12">
+                About <span class="text-blue-600">Me</span>
+            </h2>
+            <div class="max-w-4xl mx-auto">
+                <div data-aos="fade-up" data-aos-delay="100" class="bg-gray-50 dark:bg-gray-900 rounded-2xl p-8 shadow-lg">
+                    <p class="text-gray-700 dark:text-gray-300 text-lg leading-relaxed mb-6">
+                        I am a data-focused professional with a proven track record of turning raw IoT and operational data into strategic insights. 
+                        My passion lies in building robust data pipelines and interactive dashboards that empower data-driven decision-making. 
+                        Currently, I drive data intelligence for Chennai's large-scale urban waste management operations at <strong class="text-blue-600">Urbaser Sumeet</strong>, 
+                        supporting the Greater Chennai Corporation's vision for a cleaner, zero-waste city.
+                    </p>
+                    <p class="text-gray-700 dark:text-gray-300 text-lg leading-relaxed mb-6">
+                        My approach blends technical expertise in <strong class="text-blue-600">SQL, Python, and Power BI</strong> with a strong ability to quickly 
+                        acquire and integrate new technologies. I am a strong proponent of <strong class="text-purple-600">"vibe coding"</strong> – leveraging AI tools like 
+                        ChatGPT and DeepSeek to rapidly prototype analytical scripts and automate workflows, significantly reducing manual effort 
+                        and MIS turnaround time.
+                    </p>
+                    <p class="text-gray-700 dark:text-gray-300 text-lg leading-relaxed">
+                        From digitizing field reports with AppSheet to designing professional websites, I enjoy taking ownership of projects 
+                        that bridge the gap between data and real-world impact.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 bg-gray-50 dark:bg-gray-900">
+        <div class="container mx-auto px-6">
+            <h2 data-aos="fade-up" class="text-4xl font-bold text-center text-gray-900 dark:text-white mb-12">
+                Professional <span class="text-blue-600">Experience</span>
+            </h2>
+            <div class="max-w-4xl mx-auto space-y-8">
+                <!-- Experience 1 - Current -->
+                <div data-aos="fade-up" class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300">
+                    <div class="flex flex-wrap justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-900 dark:text-white">MIS Executive – IT Department</h3>
+                            <p class="text-blue-600 text-lg font-semibold">Urbaser Sumeet (Sumeet Urban Services Chennai Pvt. Ltd.)</p>
+                        </div>
+                        <span class="bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400 px-4 py-2 rounded-full text-sm font-semibold">
+                            July 2025 – Present
+                        </span>
+                    </div>
+                    <p class="text-gray-500 dark:text-gray-400 italic mb-4">Driving data intelligence for Chennai's smart city initiatives.</p>
+                    <ul class="space-y-3 text-gray-700 dark:text-gray-300">
+                        <li class="flex items-start gap-3"><i class="fas fa-database text-blue-600 mt-1"></i><span><strong>IoT Data Pipeline & ETL Management:</strong> Extracted, cleaned, and transformed raw IoT device logs using SQL-based ETL processes into PostgreSQL and MS Access.</span></li>
+                        <li class="flex items-start gap-3"><i class="fas fa-chart-line text-blue-600 mt-1"></i><span><strong>Power BI Dashboard & BI Reporting:</strong> Designed interactive Power BI dashboards for real-time fleet movement and collection efficiency tracking.</span></li>
+                        <li class="flex items-start gap-3"><i class="fas fa-robot text-blue-600 mt-1"></i><span><strong>AI-Augmented Data Analysis:</strong> Leveraged AI tools for exploratory data analysis, reducing manual effort by 40%.</span></li>
+                        <li class="flex items-start gap-3"><i class="fas fa-code text-blue-600 mt-1"></i><span><strong>Company Website Development:</strong> Built official company website using vibe coding with AI tools.</span></li>
+                        <li class="flex items-start gap-3"><i class="fas fa-mobile-alt text-blue-600 mt-1"></i><span><strong>Field Data Digitization:</strong> Built Google AppSheet application replacing paper-based reporting.</span></li>
+                    </ul>
+                </div>
+                
+                <!-- Experience 2 - Previous -->
+                <div data-aos="fade-up" data-aos-delay="100" class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300">
+                    <div class="flex flex-wrap justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-900 dark:text-white">Data Entry Associate (Warehouse Operations)</h3>
+                            <p class="text-blue-600 text-lg font-semibold">RMKV Silks Pvt Ltd</p>
+                        </div>
+                        <span class="bg-gray-200 dark:bg-gray-700 text-gray-600 dark:text-gray-400 px-4 py-2 rounded-full text-sm font-semibold">
+                            Sep 2024 – Jul 2025
+                        </span>
+                    </div>
+                    <ul class="space-y-3 text-gray-700 dark:text-gray-300">
+                        <li class="flex items-start gap-3"><i class="fas fa-warehouse text-blue-600 mt-1"></i><span><strong>Managed Inventory Data Flow:</strong> Utilized Oracle ERP for stock receipts and purchase orders.</span></li>
+                        <li class="flex items-start gap-3"><i class="fas fa-check-double text-blue-600 mt-1"></i><span><strong>Supported Data Integrity:</strong> Verified physical stock against digital records.</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-white dark:bg-gray-800">
+        <div class="container mx-auto px-6">
+            <h2 data-aos="fade-up" class="text-4xl font-bold text-center text-gray-900 dark:text-white mb-12">
+                Featured <span class="text-blue-600">Projects</span>
+            </h2>
+            <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <div data-aos="zoom-in" class="bg-gray-50 dark:bg-gray-900 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300">
+                    <div class="w-16 h-16 bg-blue-100 dark:bg-blue-900/30 rounded-2xl flex items-center justify-center mb-4">
+                        <i class="fas fa-database text-3xl text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Automated Inventory Data Ingestion System</h3>
+                    <p class="text-sm text-gray-500 dark:text-gray-400 mb-3">Python, Pandas, PyMySQL, MySQL, Excel</p>
+                    <p class="text-gray-600 dark:text-gray-400">ETL pipeline for automated inventory data extraction, cleaning, and loading into MySQL database with data integrity checks.</p>
+                </div>
+                <div data-aos="zoom-in" data-aos-delay="100" class="bg-gray-50 dark:bg-gray-900 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300">
+                    <div class="w-16 h-16 bg-blue-100 dark:bg-blue-900/30 rounded-2xl flex items-center justify-center mb-4">
+                        <i class="fas fa-map-marker-alt text-3xl text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">GPS Deployment Status Monitoring System</h3>
+                    <p class="text-sm text-gray-500 dark:text-gray-400 mb-3">Power Query, SQL, M Language, ETL</p>
+                    <p class="text-gray-600 dark:text-gray-400">ETL pipeline using Power Query for GPS deployment data monitoring and automated reporting workflows.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-50 dark:bg-gray-900">
+        <div class="container mx-auto px-6">
+            <h2 data-aos="fade-up" class="text-4xl font-bold text-center text-gray-900 dark:text-white mb-12">
+                Technical <span class="text-blue-600">Skills</span>
+            </h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <div data-aos="fade-up" class="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-xl transition">
+                    <div class="flex items-center gap-3 mb-4">
+                        <i class="fas fa-code text-3xl text-blue-600"></i>
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white">Programming & Data Analysis</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-tag">SQL (ETL, Complex Queries)</span>
+                        <span class="skill-tag">Python (Pandas, NumPy)</span>
+                        <span class="skill-tag">Data Cleaning & Transformation</span>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="100" class="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-xl transition">
+                    <div class="flex items-center gap-3 mb-4">
+                        <i class="fas fa-chart-pie text-3xl text-blue-600"></i>
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white">Business Intelligence & Visualization</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-tag">Power BI</span>
+                        <span class="skill-tag">Excel (Power Query, PivotTables)</span>
+                        <span class="skill-tag">DAX & M Language</span>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="200" class="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-xl transition">
+                    <div class="flex items-center gap-3 mb-4">
+                        <i class="fas fa-brain text-3xl text-blue-600"></i>
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white">AI & Emerging Tools</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-tag">Vibe Coding (ChatGPT, DeepSeek)</span>
+                        <span class="skill-tag">AI-Assisted Data Analytics</span>
+                        <span class="skill-tag">Google AppSheet</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Combined Feedback & Contact Section -->
+    <section id="feedback" class="py-20 bg-white dark:bg-gray-800">
+        <div class="container mx-auto px-6">
+            <h2 data-aos="fade-up" class="text-4xl font-bold text-center text-gray-900 dark:text-white mb-4">
+                Share Your <span class="text-blue-600">Feedback</span>
+            </h2>
+            <p data-aos="fade-up" class="text-center text-gray-600 dark:text-gray-400 mb-12 max-w-2xl mx-auto">
+                Your feedback helps me grow! Share your thoughts, suggestions, or just say hello.
+            </p>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Contact Info Side -->
+                    <div data-aos="fade-right" class="bg-gray-50 dark:bg-gray-900 rounded-2xl p-8 shadow-lg text-center">
+                        <div class="w-16 h-16 bg-blue-100 dark:bg-blue-900/30 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-envelope text-3xl text-blue-600"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Let's Connect</h3>
+                        <p class="text-gray-600 dark:text-gray-400 mb-4">I'd love to hear from you!</p>
+                        <div class="bg-gray-200 dark:bg-gray-700 rounded-lg p-3 mb-4">
+                            <p class="text-lg font-semibold text-gray-900 dark:text-white break-all">vasanthaprakash.e@gmail.com</p>
+                        </div>
+                        <button id="copyEmailBtn" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition mb-4 w-full">
+                            <i class="fas fa-copy mr-2"></i> Copy Email
+                        </button>
+                        <div class="flex justify-center space-x-4 pt-4 border-t border-gray-200 dark:border-gray-700">
+                            <a href="https://github.com/VasanthaprakashE" target="_blank" class="text-gray-600 dark:text-gray-400 hover:text-blue-600 text-2xl transition"><i class="fab fa-github"></i></a>
+                            <a href="https://linkedin.com/in/vasanthaprakash-e/" target="_blank" class="text-gray-600 dark:text-gray-400 hover:text-blue-600 text-2xl transition"><i class="fab fa-linkedin"></i></a>
+                            <a href="mailto:vasanthaprakash.e@gmail.com" class="text-gray-600 dark:text-gray-400 hover:text-blue-600 text-2xl transition"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    
+                    <!-- Feedback Form Side -->
+                    <div data-aos="fade-left" class="bg-gray-50 dark:bg-gray-900 rounded-2xl p-8 shadow-lg">
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4 text-center">Leave Feedback</h3>
+                        <form id="feedbackForm" class="space-y-4">
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <input type="text" id="fbName" placeholder="Your Name *" required class="w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:outline-none focus:border-blue-600">
+                                <input type="email" id="fbEmail" placeholder="Your Email (optional)" class="w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:outline-none focus:border-blue-600">
+                            </div>
+                            
+                            <select id="fbType" class="w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:outline-none focus:border-blue-600">
+                                <option value="">Select Feedback Type *</option>
+                                <option value="Suggestion">💡 Suggestion</option>
+                                <option value="Bug Report">🐛 Bug Report</option>
+                                <option value="Compliment">❤️ Compliment</option>
+                                <option value="Question">❓ Question</option>
+                            </select>
+                            
+                            <div>
+                                <label class="block text-sm text-gray-600 dark:text-gray-400 mb-2">Rate My Portfolio</label>
+                                <div class="flex gap-2" id="ratingStars">
+                                    <i class="far fa-star text-2xl cursor-pointer hover:text-yellow-400 transition" data-rating="1"></i>
+                                    <i class="far fa-star text-2xl cursor-pointer hover:text-yellow-400 transition" data-rating="2"></i>
+                                    <i class="far fa-star text-2xl cursor-pointer hover:text-yellow-400 transition" data-rating="3"></i>
+                                    <i class="far fa-star text-2xl cursor-pointer hover:text-yellow-400 transition" data-rating="4"></i>
+                                    <i class="far fa-star text-2xl cursor-pointer hover:text-yellow-400 transition" data-rating="5"></i>
+                                </div>
+                                <input type="hidden" id="fbRating" value="0">
+                            </div>
+                            
+                            <textarea id="fbMessage" rows="4" placeholder="Your feedback or message... *" required class="w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:outline-none focus:border-blue-600"></textarea>
+                            
+                            <div id="fbStatus" class="hidden p-3 rounded-lg text-center text-sm"></div>
+                            
+                            <button type="submit" id="submitFeedbackBtn" class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition font-semibold">
+                                <i class="fas fa-paper-plane mr-2"></i> Send Feedback
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Education Section -->
+    <section class="py-20 bg-gray-50 dark:bg-gray-900">
+        <div class="container mx-auto px-6">
+            <h2 data-aos="fade-up" class="text-4xl font-bold text-center text-gray-900 dark:text-white mb-12">
+                Education & <span class="text-blue-600">Certifications</span>
+            </h2>
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div data-aos="fade-right" class="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg">
+                    <div class="flex items-center gap-3 mb-3">
+                        <i class="fas fa-graduation-cap text-3xl text-blue-600"></i>
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white">BA Defense and Strategic Studies</h3>
+                    </div>
+                    <p class="text-gray-600 dark:text-gray-400">Voorhees College | 2020-2023</p>
+                </div>
+                <div data-aos="fade-left" class="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg">
+                    <div class="flex items-center gap-3 mb-3">
+                        <i class="fas fa-certificate text-3xl text-blue-600"></i>
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white">Professional Certifications</h3>
+                    </div>
+                    <ul class="space-y-1 text-gray-600 dark:text-gray-400">
+                        <li>• Data Analytics Master Program - Besant Technology</li>
+                        <li>• Business Associate Vocation Course - Unnati</li>
+                        <li>• Diploma in Computer Application - BSS Computer Education</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; <span id="currentYear"></span> Vasanthaprakash E. All rights reserved.</p>
+            <p class="text-sm text-gray-400 mt-2">Built with <i class="fas fa-heart text-red-500"></i> using HTML, Tailwind CSS, and JavaScript</p>
+        </div>
+    </footer>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

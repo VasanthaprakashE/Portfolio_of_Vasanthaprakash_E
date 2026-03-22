@@ -1,0 +1,22 @@
+{
+  "name": "vasanthaprakash-portfolio",
+  "version": "1.0.0",
+  "description": "Personal portfolio website of Vasanthaprakash E - Data Analyst & MIS Executive",
+  "main": "index.html",
+  "scripts": {
+    "build:css": "npx tailwindcss -i ./src/input.css -o ./style.css --minify",
+    "watch:css": "npx tailwindcss -i ./src/input.css -o ./style.css --watch"
+  },
+  "keywords": [
+    "portfolio",
+    "data-analyst",
+    "mis-executive",
+    "tailwindcss"
+  ],
+  "author": "Vasanthaprakash E",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.4.19"
+  },
+  "type": "commonjs"
+}

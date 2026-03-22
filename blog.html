@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog - Data Analytics, ETL, Power BI, and AI insights by Vasanthaprakash E">
+    <title>Blog | Vasanthaprakash E - Data Insights & Automation</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Compiled Tailwind CSS -->
+    <link href="style.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 dark:bg-gray-900 transition-colors duration-300 font-['Inter']">
+    
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm shadow-md z-50 transition-all duration-300">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                    V<span class="text-gray-900 dark:text-white">Prakash</span>
+                </a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html#home" class="nav-link text-gray-700 dark:text-gray-300 hover:text-blue-600">Home</a>
+                    <a href="index.html#about" class="nav-link text-gray-700 dark:text-gray-300 hover:text-blue-600">About</a>
+                    <a href="index.html#experience" class="nav-link text-gray-700 dark:text-gray-300 hover:text-blue-600">Experience</a>
+                    <a href="index.html#projects" class="nav-link text-gray-700 dark:text-gray-300 hover:text-blue-600">Projects</a>
+                    <a href="index.html#skills" class="nav-link text-gray-700 dark:text-gray-300 hover:text-blue-600">Skills</a>
+                    <a href="blog.html" class="nav-link text-blue-600">Blog</a>
+                    <a href="index.html#feedback" class="nav-link text-gray-700 dark:text-gray-300 hover:text-blue-600">Feedback</a>
+                </div>
+                <button id="darkModeToggle" class="p-2 rounded-lg bg-gray-200 dark:bg-gray-700 transition hover:scale-105">
+                    <i class="fas fa-moon text-gray-700 dark:hidden"></i>
+                    <i class="fas fa-sun hidden dark:inline-block text-yellow-400"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Blog Header -->
+    <section class="pt-32 pb-16 text-center bg-gradient-to-br from-blue-50 to-purple-50 dark:from-gray-800 dark:to-gray-900">
+        <div class="container mx-auto px-6">
+            <h1 data-aos="fade-up" class="text-5xl font-bold text-gray-900 dark:text-white mb-4">
+                My <span class="text-blue-600">Blog</span>
+            </h1>
+            <p data-aos="fade-up" data-aos-delay="100" class="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+                Thoughts, tutorials, and insights on data analytics, automation, and emerging technologies
+            </p>
+        </div>
+    </section>
+    
+    <!-- Blog Posts Grid -->
+    <section class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="blogPostsGrid">
+                <!-- Posts will be loaded dynamically -->
+                <div class="text-center text-gray-500 dark:text-gray-400 py-8 col-span-full">
+                    <i class="fas fa-spinner fa-spin fa-2x mb-2"></i>
+                    <p>Loading blog posts...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; <span id="currentYear"></span> Vasanthaprakash E. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="blog-posts.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
